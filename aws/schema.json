@@ -1,0 +1,60 @@
+[
+  {
+    "description": "List available times and price for attractions",
+    "inputSchema": {
+      "properties": {
+        "date": {
+          "description": "Requested date for attraction",
+          "type": "string"
+        }
+      },
+      "required": [
+        "date"
+      ],
+      "type": "object"
+    },
+    "name": "list_attractions"
+  },
+  {
+    "description": "Reserve attraction ticket for a date and time",
+    "inputSchema": {
+      "properties": {
+        "attraction": {
+          "description": "The attraction to reserve",
+          "type": "string"
+        },
+        "date": {
+          "description": "The available date for the attraction",
+          "type": "string"
+        },
+        "time": {
+          "description": "The available time for the attraction",
+          "type": "string"
+        }
+      },
+      "required": [
+        "attraction",
+        "date",
+        "time"
+      ],
+      "type": "object"
+    },
+    "name": "reserve_ticket"
+  },
+  {
+    "description": "Cancel ticket reservation",
+    "inputSchema": {
+      "properties": {
+        "reservationCode": {
+          "description": "Reservation code for reserved attraction",
+          "type": "string"
+        }
+      },
+      "required": [
+        "reservationCode"
+      ],
+      "type": "object"
+    },
+    "name": "cancel_ticket"
+  }
+]
