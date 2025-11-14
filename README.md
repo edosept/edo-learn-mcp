@@ -2,7 +2,7 @@
 
 Strands Agents can use the MCP Client Tool available with Strands SDK to connect to external MCP Servers and dynamically load remote tools.
 
-[image]
+![strands_agentcore](https://github.com/edosept/edo-learn-mcp/blob/main/aws/images/strandsWithAgentCore.png)
 
 The strands-travel-agent Lambda function will be the MCP Client that will make a call to the Attractions MCP Server that you will create using Agent Core Gateway. This MCP Server is secured using OAuth2 using Cognito. The Attractions Lambda function has various tools like List Attractions, Reserve Ticket, and Cancel ticket to allow you to use various methods that are defined depending on the tool that you need.
 
